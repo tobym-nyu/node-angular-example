@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+	<head>
+		<title>example</title>
+		<script src="/node_modules/angular/angular.js"></script>
+	</head>
+	<body>
+
+		<div ng-controller="RestaurantsCtrl">
+			<h3>Restaurants (from the API)</h3>
+		 	<ul ng-repeat="restaurant in restaurants">
+		 		<li>{{restaurant.id}}, {{restaurant.name}}, lat={{restaurant.lat}}, lon={{restaurant.lon}}</li>
+		 	</ul>
+		</div>
+
+
+		<script src="/js/controllers.js"></script>
+	</body>
+</html>
